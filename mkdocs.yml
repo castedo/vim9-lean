@@ -1,7 +1,7 @@
-site_name: Vim 9 for Lean
+site_name: Vim 9 plugin for Lean
 repo_name: gitlab<br>castedo/vim9-lean
 repo_url: https://gitlab.com/castedo/vim9-lean
-edit_uri: -/edit/vim9-lean/docs
+edit_uri: -/edit/website/docs
 theme:
   name: material
   features:
@@ -13,3 +13,4 @@ theme:
     - navigation.tracking
 nav:
   - Home: index.md
+  - Math Input: math-input.md
