@@ -5,11 +5,6 @@ if exists("g:did_loaded_lean")
 endif
 g:did_load_lean = true
 
-if &diff
-  # skip if vim started in diff mode
-  finish
-endif
-
 try
   packadd lsp
 catch
@@ -17,6 +12,11 @@ catch
   echomsg "Consult https://github.com/yegappan/lsp/."
   finish
 endtry
+
+if &diff
+  # skip if vim started in diff mode
+  finish
+endif
 
 if !executable('lake')
   echomsg "Lean executable 'lake' not found."

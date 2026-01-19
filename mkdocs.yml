@@ -1,0 +1,15 @@
+site_name: Vim 9 for Lean
+repo_name: gitlab<br>castedo/vim9-lean
+repo_url: https://gitlab.com/castedo/vim9-lean
+edit_uri: -/edit/vim9-lean/docs
+theme:
+  name: material
+  features:
+    - content.action.edit
+    - content.code.copy
+    - toc.integrate
+    - navigation.footer
+    - navigation.top
+    - navigation.tracking
+nav:
+  - Home: index.md
