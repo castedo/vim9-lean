@@ -11,6 +11,9 @@ theme:
     - navigation.footer
     - navigation.top
     - navigation.tracking
+markdown_extensions:
+  - admonition
 nav:
   - Home: index.md
+  - Install: install.md
   - Math Input: math-input.md
