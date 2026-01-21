@@ -13,6 +13,8 @@ theme:
     - navigation.tracking
 markdown_extensions:
   - admonition
+  - attr_list
+  - def_list
 nav:
   - Home: index.md
   - Install: install.md
