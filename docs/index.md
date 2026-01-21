@@ -2,7 +2,7 @@ Vim 9 plugin for [Lean](https://lean-lang.org)
 ==============================================
 
 !!! warning
-    If you want to see Lean *proof state* in an *Infoview window*, then
+    If you want to see *proof state* in an *Infoview window*, then
     you probably want to use the [lean.nvim](https://github.com/Julian/lean.nvim) plugin
     for [Neovim](https://neovim.io/).
     The `vim9-lean` plugin is missing this functionality.
@@ -30,9 +30,9 @@ Vim 9.
 
 Errors, warnings, and information:
 :   Various visual clues show lines/text with errors, warnings, and information.
-    Hit 'K' over text (or whatever key is bound to vim `keywordprg') to see a popup.
+    Hit 'K' over text (or whatever key is bound to Vim `keywordprg`) to see a popup.
 
-    You can also run vim command `:lopen` to see messages from Lean.
+    You can also run the Vim command `:lopen` to see messages from Lean.
 
 Many more LSP features:
 :   * auto-completion
@@ -49,7 +49,7 @@ Many more LSP features:
 Non-package configuration
 -------------------------
 
-Configuration such as key-bindings is not included in the `vim9-lean` plugin.
+Configuration such as key mappings is not included in the `vim9-lean` plugin.
 
 
 Non-Vim functionality
@@ -75,4 +75,4 @@ InfoView showing Lean goal and tactic state:
 
 Vertical orange bar showing file processing status:
 :   Probably not getting implemented. In the meantime, you can use your favorite CPU
-usage display to judge if Lean file processing is still in progress.
+    usage display to judge if Lean file processing is still in progress.

@@ -5,16 +5,18 @@ if exists("g:did_loaded_lean")
 endif
 g:did_load_lean = true
 
-try
-  packadd lsp
-catch
-  echomsg "Vim plugin 'lsp' installation required."
-  echomsg "Consult https://github.com/yegappan/lsp/."
-  finish
-endtry
+if !exists("g:LspAddServer")
+  try
+    packadd lsp
+  catch
+    echomsg "Vim plugin 'lsp' installation required."
+    echomsg "Consult https://github.com/yegappan/lsp/."
+    finish
+  endtry
+endif
 
 if &diff
-  # skip if vim started in diff mode
+  # skip LSP setup if vim started in diff mode
   finish
 endif
 
@@ -29,5 +31,3 @@ call LspAddServer([{
   path: 'lake',
   args: ['serve'],
 }])
-
-call LspOptionsSet({ semanticHighlight: true })
