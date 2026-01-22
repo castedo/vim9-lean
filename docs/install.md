@@ -32,4 +32,4 @@ cd ~/.config/vim/pack/viagit/start
 git clone https://gitlab.com/castedo/vim9-lean.git
 ```
 
-Alternatively, use `opt` instead of `start` and then load it using the `:packadd vim9-lean` command.
+Alternatively, use `opt` instead of `start`, and then load it using the `:packadd vim9-lean` command.

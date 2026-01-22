@@ -47,10 +47,10 @@ Go to definition:
 :   Press `Ctrl-[` to jump to definitions.
 
 LSP features with mappings in [the key mappings starter](key-mappings.md):
-:   * Go to type definition via `grt` mapped to `:LspGotoTypeDef`.
-    * Find references via `grr` mapped to `:LspGotoReferences`.
-    * Document outline via `gro` mapped to `:LspOutline`.
-    * Go to symbol via `gO` mapped to `:LspDocumentSymbol`.
+:   * Go to type definition via `grt`, mapped to `:LspGotoTypeDef`.
+    * Find references via `grr`, mapped to `:LspGotoReferences`.
+    * Document outline via `gro`, mapped to `:LspOutline`.
+    * Go to symbol via `gO`, mapped to `:LspDocumentSymbol`.
 
 
 Signature help:
