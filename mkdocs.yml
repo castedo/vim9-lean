@@ -18,4 +18,5 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Install: install.md
-  - Math Input: math-input.md
+  - Key mappings: key-mappings.md
+  - Math input: math-input.md
