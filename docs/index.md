@@ -1,12 +1,6 @@
 Vim 9 plugin for [Lean](https://lean-lang.org)
 ==============================================
 
-!!! warning
-    If you want to see *proof state* in an *Infoview window*,
-    you probably want to use the [lean.nvim](https://github.com/Julian/lean.nvim) plugin
-    for [Neovim](https://neovim.io/).
-    The `vim9-lean` plugin does not have this functionality.
-
 
 [Install the vim9-lean plugin package](install.md){ .md-button .md-button--primary }
 
@@ -58,7 +52,7 @@ Signature help:
 
 
 InfoView showing Lean goal and tactic state:
-:   Currently **NOT** implemented in `vim9-lean`, but it might be in the future.
+:   See [InfoView](infoview.md).
 
 
 Vertical orange bar showing file processing status:
