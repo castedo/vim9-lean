@@ -5,11 +5,25 @@ Vim 9 plugin for [Lean](https://lean-lang.org)
     As of late January 2026, this Vim plugin has only one user (the initial developer).
     There will likely be some upgrades in early 2026 that will require manual
     changes to your Vim configuration.
-    If you are not an experienced Vim user, you might want to seek alternatives such as the
+    If you are not an experienced Vim user, you may want to consider alternatives such as the
     [lean.nvim](https://github.com/Julian/lean.nvim) plugin for [Neovim](https://neovim.io/).
 
 
 [Install the vim9-lean plugin package](install.md){ .md-button .md-button--primary }
+
+
+Configuration vs. editor features
+---------------------------------
+
+The `vim9-lean` plugin provides a minimal amount of Lean-specific LSP configuration.
+The [`yegappan/lsp`](https://github.com/yegappan/lsp) plugin package provides generic
+LSP functionality for Vim 9 that is *not Lean specific*.
+Neither plugin provides UI editor features that are specific to Lean, such as those found in the
+[Lean 4 VS Code extension](https://github.com/leanprover/vscode-lean4/blob/master/vscode-lean4/manual/manual.md).
+For interactive Lean-specific feedback, you can use generic LSP editor features and
+[separate non-editor applications](applications.md).
+
+<!-- copybreak off -->
 
 
 Features
