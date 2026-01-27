@@ -1,12 +1,15 @@
 Vim 9 plugin for [Lean](https://lean-lang.org)
 ==============================================
 
+!!! warning
+    As of late January 2026, this Vim plugin has only one user (the initial developer).
+    There will likely be some upgrades in early 2026 that will require manual
+    changes to your Vim configuration.
+    If you are not an experienced Vim user, you might want to seek alternatives such as the
+    [lean.nvim](https://github.com/Julian/lean.nvim) plugin for [Neovim](https://neovim.io/).
+
 
 [Install the vim9-lean plugin package](install.md){ .md-button .md-button--primary }
-
-
-The following list roughly corresponds to the features of the
-[Lean 4 VS Code extension](https://github.com/leanprover/vscode-lean4/blob/master/vscode-lean4/manual/manual.md).
 
 
 Features
