@@ -23,12 +23,10 @@ git clone https://github.com/yegappan/lsp.git
 
 You can replace `viagit` with any directory name.
 
-The `vim9-lean` plugin package is a tiny additional plugin to this LSP setup for Vim 9.
-
-
 ## Plugin `castedo/vim9-lean`
 
-The `vim9-lean` plugin package is available at both:
+The `vim9-lean` plugin package is a tiny additional plugin to this LSP setup for Vim 9.
+It is available at both:
 
 * [gitlab.com/castedo/vim9-lean](https://gitlab.com/castedo/vim9-lean/)
 * [github.com/castedo/vim9-lean](https://github.com/castedo/vim9-lean/)

@@ -1,4 +1,4 @@
-site_name: Vim 9 plugin for Lean
+site_name: Vim 9 plugins for Lean
 repo_name: gitlab<br>castedo/vim9-lean
 repo_url: https://gitlab.com/castedo/vim9-lean
 edit_uri: -/edit/website/docs
@@ -19,6 +19,7 @@ nav:
   - Home: index.md
   - Install: install.md
   - Key mappings: key-mappings.md
+  - Generic LSP: lsp.md
   - Math input: math-input.md
   - Applications: applications.md
   - InfoView: infoview.md

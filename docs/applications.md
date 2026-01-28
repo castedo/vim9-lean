@@ -1,14 +1,8 @@
 Applications
 ============
 
-This page lists some applications that are not editors but can run alongside
+This page lists some applications that are not editors but are useful to run alongside
 an editor when writing in the Lean language.
-
-Many users enjoy the simplicity of writing code in a single software application:
-an Integrated Development Environment (IDE). However, since as early as 1990, computer users
-have been able to
-run multiple software applications simultaneously in separate windows, thanks to the
-magic of [operating system multitasking](https://en.wikipedia.org/wiki/Computer_multitasking).
 
 
 Lean-specific non-editor applications
@@ -27,3 +21,17 @@ It is comparable to the InfoView in the
 [crates.io/crates/lean-tui](https://crates.io/crates/lean-tui)
 
 [codeberg.org/wvhulle/lean-tui](https://codeberg.org/wvhulle/lean-tui)
+
+
+Generic non-editor applications
+-------------------------------
+
+### System monitor
+
+Wondering if Lean has finished processing your files so that all those LSP features are
+available in your editor?
+
+You can use the system monitor included with your operating system,
+such as [top](https://en.wikipedia.org/wiki/Top_(software)) or
+[GNOME System Monitor](https://apps.gnome.org/SystemMonitor/).
+All major operating systems provide some system monitor program.
