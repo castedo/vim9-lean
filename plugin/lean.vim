@@ -26,6 +26,15 @@ if !executable('lake')
   finish
 endif
 
+if executable('lean-tui')
+  call LspAddServer([{
+    filetype: 'lean',
+    path: 'lean-tui',
+    args: ['proxy'],
+  }])
+  finish
+endif
+
 call LspAddServer([{
   filetype: 'lean',
   path: 'lake',

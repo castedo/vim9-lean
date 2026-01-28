@@ -11,6 +11,8 @@ theme:
     - navigation.footer
     - navigation.top
     - navigation.tracking
+extra_css:
+  - style/extra.css
 markdown_extensions:
   - admonition
   - attr_list

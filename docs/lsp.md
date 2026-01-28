@@ -21,26 +21,22 @@ Sign column:
 Hovers:
 :   Press 'K' while over a word to display hover information.
 
+Go to definition:
+:   Press `Ctrl-[` to jump to definitions.
 
 Many LSP features work out of the box:
 :   * Auto-completion
     * Occurrence highlighting
     * Semantic highlighting
-    * Code actions
     * ...and many more. See Vim `:help lsp.txt` or
       [lsp](https://github.com/yegappan/lsp) for a full list.
-
-
-Go to definition:
-:   Press `Ctrl-[` to jump to definitions.
-
 
 LSP features with mappings in [the key mappings starter](key-mappings.md):
 :   * Go to type definition via `grt`, mapped to `:LspGotoTypeDef`.
     * Find references via `grr`, mapped to `:LspGotoReferences`.
     * Document outline via `gro`, mapped to `:LspOutline`.
     * Go to symbol via `gO`, mapped to `:LspDocumentSymbol`.
-
+    * Code actions via `gra`, mapped to `:LspCodeAction`.
 
 Signature help:
-:   Supported; it should appear after typing a space within a function application.
+:   Popup appears after typing a space within a function application.
