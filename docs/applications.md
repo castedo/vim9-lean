@@ -5,8 +5,13 @@ This page lists some applications that are not editors but are useful to run alo
 an editor when writing in the Lean language.
 
 
-Lean-specific non-editor applications
--------------------------------------
+Lean editor sidekick applications
+---------------------------------
+
+A *Lean editor sidekick* application is a non-editor tool that detects the caret
+(text cursor) position in your Lean file within any editor that supports LSP.
+Lean-TUI is an example of an editor sidekick application.
+
 
 ### Lean-TUI
 
@@ -34,4 +39,4 @@ available in your editor?
 You can use the system monitor included with your operating system,
 such as [top](https://en.wikipedia.org/wiki/Top_(software)) or
 [GNOME System Monitor](https://apps.gnome.org/SystemMonitor/).
-All major operating systems provide some system monitor program.
+All major operating systems provide a system monitor program.
