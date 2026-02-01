@@ -12,7 +12,7 @@ Vim 9 plugins for [Lean](https://lean-lang.org)
 Generic LSP features in Vim 9
 -----------------------------
 
-These Vim 9 plugin packages enable [generic LSP features](lsp.md) that are useful when writing in lean:
+These Vim 9 plugin packages enable [generic LSP features](lsp.md) that are useful when writing in Lean:
 
 * `vim9-lean`: minimal amount of LSP configuration for Lean
 * [`yegappan/lsp`](https://github.com/yegappan/lsp): generic LSP functionality that is *not* specific to Lean

@@ -8,7 +8,8 @@ an editor when writing in the Lean language.
 Lean editor sidekick applications
 ---------------------------------
 
-A *Lean editor sidekick* application is a non-editor tool that detects the caret
+A *Lean editor [sidekick](https://en.wikipedia.org/wiki/Sidekick)* application is a
+non-editor tool that detects the caret
 (text cursor) position in your Lean file within any editor that supports LSP.
 Lean-TUI is an example of an editor sidekick application.
 

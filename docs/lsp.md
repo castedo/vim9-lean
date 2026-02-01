@@ -11,6 +11,9 @@ Diagnostic messages:
     bound to Vim's `keywordprg`) will display a popup.
 
     You can also use the Vim command `:lopen` (or `:lop`) to view messages from Lean.
+    Remember that location lists are per file,
+    So each file will have its own location list.
+    You will need to `:lop` each file separately.
 
 Sign column:
 :   Signs appear in the sign column as visual indicators of diagnostics reported by Lean.
