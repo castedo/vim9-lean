@@ -42,5 +42,5 @@ InfoView:
 
 Vertical orange bar showing file processing status:
 :   Alternatively, you can use the
-    [system monitor](applications#system-monitor) program
+    [system monitor](applications.md#system-monitor) program
     that comes with your operating system.

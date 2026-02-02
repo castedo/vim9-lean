@@ -46,4 +46,4 @@ Other operating systems
 -----------------------
 
 If you know how to set up Unicode math input on your non-Linux operating system or
-non-GNOME desktop, feel free to email [Castedo](castedo@castedo.com) or send a pull request.
+non-GNOME desktop, feel free to email [Castedo](mailto:castedo@castedo.com) or send a pull request.
