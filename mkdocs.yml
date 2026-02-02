@@ -25,3 +25,7 @@ nav:
   - Math input: math-input.md
   - Applications: applications.md
   - InfoView: infoview.md
+  - About: about.md
+extra:
+  generator: false
+copyright: '<a href="/about/">About</a>'

@@ -1,19 +1,42 @@
-Mathematics input on UNIX-like operating systems
-================================================
+Mathematics input via the operating system
+==========================================
 
-Rather than relying on an editor to provide Unicode input,
+Instead of relying on an editor to provide Unicode input,
 your operating system's keyboard input can provide this feature.
-This way, you can input math Unicode characters into all applications.
+This lets you input Unicode math characters into all applications.
 
-Linux desktops such as GNOME use packages like
-[ibus-m17n](https://github.com/ibus/ibus-m17n/) to enable math input.
 
-On GNOME 47, you can probably find a pre-installed "Other" keyboard input
-source named `t-math-latex (m17n)`, which enables math keyboard input.
+UNIX-like operating systems
+---------------------------
 
-The [m17n library](https://www.nongnu.org/m17n/) provides multilingualization support to
-applications on UNIX-like operating systems. The multilingualization database
-[m17n-db](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git)
-specifically contains a data file
+Many Linux distros use the [GNOME](https://www.gnome.org/) desktop environment.
+On [GNOME](https://www.gnome.org/) 47,
+you can likely find a pre-installed "Other" keyboard input source named
+`t-math-latex (m17n)` by going to
+`Settings` > `Keyboard` > `Input Sources` > `+ Add Input Source` and then finding `Other`.
+This enables the mathematics input method defined by
 [`math-latex.mim`](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git/tree/MIM/math-latex.mim)
-for mathematical symbols.
+in the [m17n-db](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git)
+multilingualization database package/repository.
+
+You may need to install the `ibus-m17n` package for your Linux distro.
+
+
+### m17n math symbol key sequences for Lean
+
+Below are some math symbols commonly used in Lean.
+When using the m17n math keyboard, you type a backslash (`\`) followed by a LaTeX-like
+command.
+
+| Symbol | Key sequences       |
+|:------:| ------------------- |
+|   →    | \-sl  \to           |
+|   ←    | \-sh  \from  \gets  |
+|   ↔    | \-sd                |
+|   ∨    | \or                 |
+|   ∧    | \and                |
+|   ¬    | \not                |
+
+
+For more math symbols and key sequences, see
+[`math-latex.mim`](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git/tree/MIM/math-latex.mim).
