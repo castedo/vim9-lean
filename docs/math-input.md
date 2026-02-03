@@ -25,25 +25,44 @@ macOS
 See [Math input method in Mac OS X](https://gist.github.com/Banus/37c78e3f1abb50338fb10aefb929e1f4).
 
 
-Linux
------
+Linux with X11
+--------------
 
-Depending on your distro and personal preferences, you may prefer using:
+The [X Window System (X11)](https://en.wikipedia.org/wiki/X_Window_System)
+has been the [windowing system](https://en.wikipedia.org/wiki/Windowing_system)
+used by Linux for decades.
+X11 uses the
+[X keyboard extension (XKB)](https://en.wikipedia.org/wiki/X_keyboard_extension)
+for keyboard input.
+Users can type *compose key* sequences to input special characters.
+There are system-installed default key sequences and 
+users can create additional custom key sequences in their `~/.XCompose` file.
 
-* [X keyboard extension (XKB)](https://en.wikipedia.org/wiki/X_keyboard_extension)
-:   This keyboard input method of the
-[X Window System (X11)](https://en.wikipedia.org/wiki/X_Window_System)
-has been in use for many decades.
-Users can configure their own custom compose sequences in a `~/.XCompose` file.
-Distros that have replaced X11 with 
-[Wayland](https://en.wikipedia.org/wiki/Wayland_(protocol))
-will likely still have some partial support for `~/.XCompose` files and XKB compose sequences,
-[such as in RHEL 10](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_the_gnome_desktop_environment/customizing-the-desktop-environment#enabling-the-compose-key-for-an-individual-user).
+!!! warning
+    Major Linux distros such as Ubuntu, Debian, RHEL, CentOS, and Fedora, and
+    desktop environments GNOME and [KDE](https://blogs.kde.org/2025/11/26/going-all-in-on-a-wayland-future/)
+    have [transitioned to, or are in the process of transitioning to,
+    Wayland](https://en.wikipedia.org/wiki/Wayland_(protocol)#Adoption).
+    Although Wayland is backward compatible with most X11 features,
+    **it is not fully backward compatible with all X11 features**.
 
-* [one of many newer input methods](https://en.wikipedia.org/wiki/List_of_input_methods_for_Unix_platforms)
-:   [Intelligent Input Bus (IBus)](https://en.wikipedia.org/wiki/Intelligent_Input_Bus)
-is the keyboard input method used by the
-[GNOME](https://www.gnome.org/) desktop environment, and it can also be installed on other desktop environments.
+
+Linux with Wayland
+------------------
+
+    
+There are [many new input methods](https://en.wikipedia.org/wiki/List_of_input_methods_for_Unix_platforms)
+for [Wayland](https://en.wikipedia.org/wiki/Windowing_system#Wayland).
+As of early 2026, the dominant one appears to be
+[Intelligent Input Bus (IBus)](https://en.wikipedia.org/wiki/Intelligent_Input_Bus),
+which is the input method used by the
+[GNOME](https://www.gnome.org/) desktop environment,
+but it can also be installed on other desktop environments.
+
+!!! note
+    IBus supports `~/.XCompose` files, but depending on your distro, you may encounter issues.
+    For example, entering α via an XKB compose key sequence does not work in RHEL 10.
+    But [other compose key sequences work on RHEL 10](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_the_gnome_desktop_environment/customizing-the-desktop-environment#enabling-the-compose-key-for-an-individual-user).
 
 
 ### GNOME
@@ -58,13 +77,13 @@ This enables the mathematics input method defined by
 in the [m17n-db](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git)
 multilingualization database package/repository.
 
-You may need to install the `ibus-m17n` package for your Linux distro.
+You might need to install the `ibus-m17n` package for your Linux distro.
 
 Screenshots of GNOME's switchable input methods can be seen in
 [Red Hat's documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_the_gnome_desktop_environment/customizing-the-desktop-environment#switching-the-input-method-in-gnome).
 
 
-### m17n math symbol key sequences for Lean
+### m17n math symbol key sequences
 
 Below are some math symbols commonly used in Lean.
 When using the m17n math keyboard, you type a backslash (`\`) followed by a
@@ -84,11 +103,3 @@ For more math symbols and key sequences, see
 [`math-latex.mim`](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git/tree/MIM/math-latex.mim).
 
 
-
-
-### X11 to Wayland Transition
-
-Depending on your Linux distro, you are,
-[or likely will be](https://blogs.kde.org/2025/11/26/going-all-in-on-a-wayland-future/),
-using the [Wayland windowing system](https://en.wikipedia.org/wiki/Windowing_system#Wayland)
-instead of the [X Window System (X11)](https://en.wikipedia.org/wiki/X_Window_System).
