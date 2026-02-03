@@ -17,7 +17,7 @@ Cross-platform
 
 ### [Espanso.org](https://espanso.org/) text expander
 
-Use the [Espanso package for Lean](https://hub.espanso.org/lean-symbols)
+You can use the [Espanso package for Lean](https://hub.espanso.org/lean-symbols)
 or configure your own, similar to [this custom config](https://gist.github.com/ericluap/466936de32be568ee1ab2f52a0531357).
 
 
@@ -73,15 +73,14 @@ Multiple input method *frameworks*, such as
 [IBus](https://en.wikipedia.org/wiki/Intelligent_Input_Bus), support m17n input methods.
 Distinct m17n input methods will appear as separate inputs methods in your desktop
 environment that you can quickly switch between.
-
 When writing Lean, there are two types of math input method to consider.
 
-An input method based on abbreviations from the Lean VS Code extension:
-:   Key sequences are short and optimized for typing. If you write a lot of Lean,
+An input method of abbreviations from the Lean VS Code extension:
+:   These key sequences are short and optimized for typing. If you write a lot of Lean,
     you'll want to learn and use these short key sequences.
 
-An input method based on LaTeX commands:
-:   Key sequences will be much longer in the LaTeX-based input method,
+An input method using LaTeX commands:
+:   These key sequences will be much longer in the LaTeX-based input method,
     but easier to remember if you already know LaTeX.
 
 
@@ -93,7 +92,7 @@ multilingualization database package/repository contains many ready-to-use m17n 
 Users can customize their own m17n input method by creating a `.mim` file in their `~/.m17n.d/` directory.
 
 
-#### An input method based the Lean VS Code extension
+#### An input method of Lean VS Code abbreviations
 
 !!! warning
     The following m17n input methods for Lean have not been packaged as part of a distro
@@ -106,7 +105,7 @@ These `.mim` files can be copied to `~/.m17n.d/` and then after running `ibus re
 (or rebooting), they will become available to add as a keyboard input method.
 
 
-#### An input method based on LaTeX commands
+#### An input method using LaTeX commands
 
 The
 [`math-latex.mim`](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git/tree/MIM/math-latex.mim)
