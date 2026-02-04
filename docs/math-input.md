@@ -54,7 +54,7 @@ Linux with Wayland
 
     
 There are [multiple new input method *frameworks*](https://en.wikipedia.org/wiki/List_of_input_methods_for_Unix_platforms)
-for [Wayland](https://en.wikipedia.org/wiki/Windowing_system#Wayland).
+for [Wayland](https://en.wikipedia.org/wiki/Windowing_system#Wayland) that replace XKB.
 As of early 2026, the dominant one appears to be
 [Intelligent Input Bus (IBus)](https://en.wikipedia.org/wiki/Intelligent_Input_Bus),
 which is the input method used by the
@@ -95,14 +95,17 @@ Users can customize their own m17n input method by creating a `.mim` file in the
 #### An input method of Lean VS Code abbreviations
 
 !!! warning
-    The following m17n input methods for Lean have not been packaged as part of a distro
-    and might be out of date.
+    As of January 2026, the following m17n input methods for Lean are outdated
+    and probably have not been packaged in any major distro.
 
 * `lean-multi-choice.mim` in <https://github.com/mike-fabian/convert-ibus-table-to-m17n-db>
 * `lean.mim` in <https://github.com/gebner/m17n-lean>
 
-These `.mim` files can be copied to `~/.m17n.d/` and then after running `ibus restart`
-(or rebooting), they will become available to add as a keyboard input method.
+[This GitHub issue](https://github.com/mike-fabian/convert-ibus-table-to-m17n-db/issues/1)
+is tracking an effort to provide an updated m17n input method for Lean.
+
+You can copy one of these `.mim` files to `~/.m17n.d/`. After running `ibus restart`
+(or rebooting), it will be available to add as a keyboard input method.
 
 
 #### An input method using LaTeX commands
