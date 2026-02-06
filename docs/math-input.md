@@ -8,8 +8,6 @@ or a text expander.
 
 If your favorite non-editor Unicode math input method is not listed on this page,
 feel free to email [Castedo](mailto:castedo@castedo.com) or send a pull request.
-More up-to-date information might be found on
-[this Lean Zulip topic](https://leanprover.zulipchat.com/#narrow/channel/561906-Editors-.26-UIs/topic/Unicode.20math.20input.20via.20OS.20instead.20of.20editor/with/571336858).
 
 
 Cross-platform
@@ -67,13 +65,47 @@ but it can also be installed with other desktop environments.
     But [other compose key sequences work on RHEL 10](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_the_gnome_desktop_environment/customizing-the-desktop-environment#enabling-the-compose-key-for-an-individual-user).
 
 
-### m17n input methods
+### ibus-table input methods
+
+Many IBus input methods are built on top of
+[ibus-table](https://github.com/mike-fabian/ibus-table),
+including one corresponding to the abbreviations of the Lean VS Code extension.
+
+#### Installing from package
+
+On Fedora Linux, this input method for Lean is provided by the `ibus-table-others` package.
+
+#### Installing from source file
+
+For distros without a package, users can install this input method from
+[the `lean.txt` source file](https://github.com/moebiuscurve/ibus-table-others/blob/main/tables/lean.txt).
+The package `ibus-table` must be installed. Then using the `lean.txt` source file:
+```
+curl -O https://raw.githubusercontent.com/moebiuscurve/ibus-table-others/refs/heads/main/tables/lean.txt
+sudo ibus-table-createdb --source lean.txt --name /usr/share/ibus-table/tables/lean.db
+ibus restart
+```
+
+
+### GNOME
+
+Many Linux distros use the [GNOME](https://www.gnome.org/) desktop environment.
+On [GNOME](https://www.gnome.org/), you can find math input methods
+by going to `Settings` > `Keyboard` > `Input Sources` > `+ Add Input Source` > `⋮` > type `Lean` > `Other (Lean 4)` > `Add`.
+
+Screenshots of GNOME's switchable input methods can be seen in
+[Red Hat's documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_the_gnome_desktop_environment/customizing-the-desktop-environment#switching-the-input-method-in-gnome).
+
+
+### Alternative input methods
+
+#### m17n input methods
 
 Multiple input method *frameworks*, such as
 [IBus](https://en.wikipedia.org/wiki/Intelligent_Input_Bus), support m17n input methods.
-Distinct m17n input methods will appear as separate inputs methods in your desktop
+Distinct m17n input methods will appear as separate input methods in your desktop
 environment that you can quickly switch between.
-When writing Lean, there are two types of math input method to consider.
+When writing Lean, there are two types of math input methods to consider.
 
 An input method of abbreviations from the Lean VS Code extension:
 :   These key sequences are short and optimized for typing. If you write a lot of Lean,
@@ -84,12 +116,13 @@ An input method using LaTeX commands:
     but easier to remember if you already know LaTeX.
 
 
-#### m17n input method definition
+##### m17n input method definition
 
 Each m17n input method is defined by a `.mim` file.
 The [m17n-db](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git)
 multilingualization database package/repository contains many ready-to-use m17n input methods.
-Users can customize their own m17n input method by creating a `.mim` file in their `~/.m17n.d/` directory.
+Users can customize their own m17n input method by creating a `.mim` file in their `~/.m17n.d/` directory,
+running `ibus restart` (or rebooting), and then adding it as a keyboard input source.
 
 
 #### An input method of Lean VS Code abbreviations
@@ -101,12 +134,6 @@ Users can customize their own m17n input method by creating a `.mim` file in the
 * `lean-multi-choice.mim` in <https://github.com/mike-fabian/convert-ibus-table-to-m17n-db>
 * `lean.mim` in <https://github.com/gebner/m17n-lean>
 
-[This GitHub issue](https://github.com/mike-fabian/convert-ibus-table-to-m17n-db/issues/1)
-is tracking an effort to provide an updated m17n input method for Lean.
-
-You can copy one of these `.mim` files to `~/.m17n.d/`. After running `ibus restart`
-(or rebooting), it will be available to add as a keyboard input method.
-
 
 #### An input method using LaTeX commands
 
@@ -114,31 +141,16 @@ The
 [`math-latex.mim`](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git/tree/MIM/math-latex.mim)
 file from [m17n-db](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git)
 defines an input method based on LaTeX commands.
-When using this keyboard, you type a backslash (`\`) followed by a
-LaTeX (or LaTeX-like) command.
-Below are some math symbols commonly used in Lean.
-
-| Symbol | Key sequences        |
-|:------:| -------------------- |
-|   →    | \\-sl  &emsp;  \\to  |
-|   ←    | \\-sh  &emsp;  \\from  &emsp;  \\gets  |
-|   ↔    | \\-sd                |
-|   ∨    | \\or                 |
-|   ∧    | \\and                |
-|   ¬    | \\not                |
-
-For more math symbols and key sequences, look at
-[`math-latex.mim`](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git/tree/MIM/math-latex.mim).
-
-
-### GNOME
-
-Many Linux distros use the [GNOME](https://www.gnome.org/) desktop environment.
-On [GNOME](https://www.gnome.org/), you can find math input methods
-by going to `Settings` > `Keyboard` > `Input Sources` > `+ Add Input Source` and then finding `Other`.
-The LaTeX-based math input method from [m17n-db](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git)
-will appear with the name `t-math-latex (m17n)`.
+In GNOME, this input method appears as an "Input Source" named `Other (t-math-latex (m17n))`.
 You might need to install the `ibus-m17n` package for your Linux distro.
 
-Screenshots of GNOME's switchable input methods can be seen in
-[Red Hat's documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_the_gnome_desktop_environment/customizing-the-desktop-environment#switching-the-input-method-in-gnome).
+When using this keyboard, you type a backslash (`\`) followed by a
+LaTeX (or LaTeX-like) command as a key sequence.
+See 
+[`math-latex.mim`](https://cgit.git.savannah.gnu.org/cgit/m17n/m17n-db.git/tree/MIM/math-latex.mim)
+for a full list of math symbols and key sequences.
+
+
+### Acknowledgements and References
+
+* [Lean Zulip topic](https://leanprover.zulipchat.com/#narrow/channel/561906-Editors-.26-UIs/topic/Unicode.20math.20input.20via.20OS.20instead.20of.20editor/with/571336858).
