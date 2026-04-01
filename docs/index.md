@@ -2,7 +2,7 @@ Vim 9 plugins for [Lean](https://lean-lang.org)
 ===============================================
 
 !!! warning
-    As of late January 2026, the `vim9-lean` plugin has only one user (the initial developer).
+    As of March 2026, the `vim9-lean` plugin has only one user (the initial developer).
     There will likely be some upgrades in early 2026 that will require manual
     changes to your Vim configuration.
     If you are not an experienced Vim user, you may want to consider alternatives such as the

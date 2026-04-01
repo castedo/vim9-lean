@@ -2,6 +2,7 @@ site_name: Vim 9 plugins for Lean
 repo_name: gitlab<br>castedo/vim9-lean
 repo_url: https://gitlab.com/castedo/vim9-lean
 edit_uri: -/edit/website/docs
+site_url: https://vim.castedo.com
 theme:
   name: material
   features:
