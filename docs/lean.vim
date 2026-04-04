@@ -1,0 +1,1 @@
+../ftplugin/lean.vim

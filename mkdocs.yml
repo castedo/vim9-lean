@@ -1,4 +1,4 @@
-site_name: Vim 9 plugins for Lean
+site_name: Using Vim 9 with Lean
 repo_name: gitlab<br>castedo/vim9-lean
 repo_url: https://gitlab.com/castedo/vim9-lean
 edit_uri: -/edit/website/docs
@@ -12,6 +12,8 @@ theme:
     - navigation.footer
     - navigation.top
     - navigation.tracking
+  logo: style/vimlogo.svg
+  favicon: style/vim_document_icon.jpg
 extra_css:
   - style/extra.css
 markdown_extensions:
@@ -21,12 +23,14 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Install: install.md
+  - vim9-lean: vim9-lean.md
   - Key mappings: key-mappings.md
   - Generic LSP: lsp.md
-  - Math input: math-input.md
   - Applications: applications.md
   - InfoView: infoview.md
   - About: about.md
+not_in_nav: |
+  math-input.md
 extra:
   generator: false
 copyright: '<a href="/about/">About</a>'
