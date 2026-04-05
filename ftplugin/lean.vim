@@ -49,6 +49,4 @@ setlocal tagfunc=lsp#lsp#TagFunc
 call LspOptionsSet({
   autoHighlight: true,
   autoPopulateDiags: true,  # use :lopen to see messages
-  semanticHighlight: true,
-  showInlayHints: true,
 })

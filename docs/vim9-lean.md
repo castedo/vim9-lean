@@ -11,7 +11,8 @@ The vim9-lean plugin
 
 The `castedo/vim9-lean` plugin is a tiny optional plugin for convenience. If you are an
 experienced Vim user who already uses LSP, you might prefer just copying the minimal Lean-specific
-vim9script provided at the end of this page.
+vim9script provided at the end of this page and [the syntax file](./syntax/lean.vim)
+(a copy from the [lean.nvim](https://github.com/Julian/lean.nvim) plugin).
 
 The `vim9-lean` plugin is available at both:
 
@@ -39,5 +40,5 @@ call LspAddServer([{
 }])
 ```
 
-There are additional nice touches and non-essential extra configurations in the [ftplugin/lean.vim](./lean.vim)
+There are additional nice touches and non-essential extra configurations in the [ftplugin/lean.vim](./ftplugin/lean.vim)
 file from the plugin that you might also want to copy.
